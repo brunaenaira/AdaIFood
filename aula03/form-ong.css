@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Marvel&family=Open+Sans&family=Roboto:ital,wght@0,100;0,500;0,700;1,100;1,300&display=swap');
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+body {
+    background-color: #eaeafb;
+    
+}
+
+.titulo {
+    font-family: 'Marvel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.imagem{
+    float: left;
+    margin-right: 10px;
+
+}
+#formulario {
+    position:static;
+    margin: 0 auto;
+    padding: 5%;
+    width:  500px;
+    background-color: #9595ea;
+    border-radius: 10px 10px 10px 10px;
+
+}
+#nome, #email{
+    width: 100%;
+}
+
+form div+div {
+    margin-top: 1em;
+}
+
+form input+input {
+    margin-top: 1em;
+}
+
+.botao {
+    text-align: center;
+}
+
+.rodape {
+    font-size: 12px;
+    background-color:  #944dff    ;
+    text-align: center;
+    margin-top: 10%;
+}

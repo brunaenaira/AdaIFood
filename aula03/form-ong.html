@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form-ong.css">
+
+    <title>Form ONG</title>
+</head>
+
+<body>
+    <h1 class="titulo">Cadastro Ajude a Causa</h1>
+<div class="imagem">
+    <img src="https://img.freepik.com/vetores-gratis/interface-de-aplicativo-movel-de-doacao-sem-levantamento-de-caridade-com-ilustracao-de-contorno-de-aplicativo-de-icone-de-moeda-de-ouro_7102-536.jpg?size=338&ext=jpg" alt="logo">
+</div>
+    <section id="formulario">
+
+        <form action="http://localhost:3000/registrations" method="post">
+            <div>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" required name="nome" />
+            </div>
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="date" id="date" name="idade" />
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+            </div>
+            <div>
+                <label for="assento">Tamanho da camiseta:</label>
+                <label>
+                    <input type="radio" name="p" value="p"> P
+                </label>
+                <label>
+                    <input type="radio" name="m" value="m"> M
+                </label>
+                <label>
+                    <input type="radio" name="G" value="meio"> G
+                </label>
+            </div>
+            <div>
+                <label for="assento">Categoria da inscrição:</label>
+                <input type="radio" name="3km" value="3km"> Corrida 3km [3RUN]
+                <input type="radio" name="5km" value="5km"> Corrida 5km [5RUN]
+                <input type="radio" name="4km" value="4km"> Caminhada 4km [4WALK]
+            </div>
+            <div>
+                <label for="valor">Valor da doação:</label>
+                <input type="number" id="valor" name="valor" step="0.01" placeholder="0.00" />
+            </div>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </section>
+    <footer class="rodape">
+        <p>&copy; 2023 Bruna Felix. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

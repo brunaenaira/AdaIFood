@@ -1,0 +1,22 @@
+{
+  "registrations": [
+    {
+      "nome": "doador",
+      "idade": "30",
+      "email": "doador@doador",
+      "tamanho": "m",
+      "inscricao": "5RUN",
+      "valor": "20000,00",
+      "id": 1
+    },
+    {
+      "nome": "Bruna Ariane Felix Da Silva",
+      "idade": "1993-07-03",
+      "email": "bru_ariane5@hotmail.com",
+      "m": "m",
+      "5km": "5km",
+      "valor": "10.00",
+      "id": 2
+    }
+  ]
+}
