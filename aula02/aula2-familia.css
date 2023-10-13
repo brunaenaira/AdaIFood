@@ -1,0 +1,103 @@
+/* Reset de estilos para zerar margens e preenchimento padrão */
+body, h1, h2, ul, ol, li, p, table, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Estilo global para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a área de conteúdo principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/* Estilo para cabeçalhos h1 e h2 */
+h1, h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo para as listas de compras e tarefas */
+ul, ol {
+    list-style-type: none;
+}
+
+/* Estilo para as listas de compras */
+.products, .tasks {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Estilo para as diferentes categorias de compras e tarefas */
+.father {
+    color: green;
+}
+
+.mother {
+    color: red;
+}
+
+.son {
+    color: blue;
+}
+
+.daughter {
+    color: purple;
+}
+
+/* Estilo para a tabela de cardápio semanal */
+.menu {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #427df3;
+    margin-top: 20px;
+}
+
+.menu caption {
+    font-size: 24px;
+    color: #333;
+    padding: 10px 0;
+}
+
+.menu th, .menu td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.menu th {
+    background-color: #59b9ea;
+    color: #fff;
+}
+
+.menu td {
+    background-color: #b2d9ec;
+}
+
+/* Estilo responsivo para telas menores que 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .menu {
+        font-size: 14px;
+    }
+}

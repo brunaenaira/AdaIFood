@@ -1,0 +1,75 @@
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+.cabecalho {
+  background-color: #E93429;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.descricao {
+  font-size: 16px;
+  font-family: Roboto;
+}
+
+.titulo-secao {
+  max-width: 1200px;
+  color: black;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.servico {
+  width: 25%;
+  background-color: #F5F5F5;
+  border: 1px solid #DDD;
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+  .servico:hover {
+    color: red;
+  }
+
+  .imagem-servico {
+    max-width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .titulo-servico {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .descricao-servico {
+    font-size: 14px;
+    font-family: Roboto;
+  }
+
+  .cabecalho {
+    background-color: rgb(190, 33, 33);
+  }
+
+  .rodape {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+    background-color: red;
+  }
+
+  .direitos-autorais {
+    font-size: 12px;
+  }
+
+  .servico {
+    background-color: rgb(233, 233, 233);
+
+  }
+
