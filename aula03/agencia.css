@@ -1,0 +1,40 @@
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+.fundo {
+    background-image: url("https://viajandoecorrendo.com/raw.php?f=8");
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 40px;
+    color: aliceblue;
+}
+.container{
+  justify-content: center;
+  display: flex;
+}
+.formulario {
+    font-weight: bold;
+
+    padding: 15px;
+    width: 50%;
+    margin: 30px 10px auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    border: 1px solid;
+    background-color: rgba(239, 246, 246, 0.745);
+    
+}
+
+#nome,
+#email {
+    width: 40%;
+    font-weight: bold;
+}
+form div+div{
+    margin-top: 1em;
+}
+
+.botao {
+    text-align: center;
+}

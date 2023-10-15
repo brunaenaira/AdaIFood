@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="agencia.css" media="screen">
+
     <title>Form</title>
 </head>
-<body>
-    <form>
-        <div>
-            <label for="nome">Nome completo:</label>
-            <input type="text" id="text" name="nome" />
-        </div>
-        <div>
-            <label for="date">Data:</label>
-            <input type="date" id="date" name="date" />
-        </div>
-        <div>
-            <label for="number">Número passageiros:</label>
-            <input type="number" id="number" name="number" />
-        </div>
-        <label for="pais">País de origem:</label>
-        <select id="pais" name="pais">
-            <option value="brasil">Brasil</option>
-            <option value="estados-unidos">Estados Unidos</option>
-            <option value="japao">Japão</option>
-            <option value="reino-unido">Reino Unido</option>
-            <option value="franca">França</option>
-        </select>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" />
-        </div>
-        <label for="refeicao">Refeição:</label>
-        <select id="refeicao" name="refaicao">
-            <option value="vegetariana">Vegetariana</option>
-            <option value="lanche">Lanche</option>
-            <option value="salada">Salada</option>
-            <option value="snack">Snack</option>
-            <option value="massa">Massa</option>
+<h1 class="titulo">Agência Travel Mundo</h1>
 
-        </select>
-        <div>
-            <label for="tel">Telefone:</label>
-            <input type="tel" id="tel" name="tel" placeholder="(12)12345-6789" />
-        </div>
-        <label for="pais-destino">País destino:</label>
+<body class="fundo">
+    <div class="container">
+        <form class="formulario">
+            <div>
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome" />
+            </div>
+            <div>
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" />
+            </div>
+            <div>
+                <label for="number">Número passageiros:</label>
+                <input type="number" id="number" name="number" />
+            </div>
+            <div>
+                <label for="pais">País de origem:</label>
+                <select id="pais" name="pais">
+                    <option value="brasil">Brasil</option>
+                    <option value="estados-unidos">Estados Unidos</option>
+                    <option value="japao">Japão</option>
+                    <option value="reino-unido">Reino Unido</option>
+                    <option value="franca">França</option>
+                </select>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+                <label for="refeicao">Refeição:</label>
+                <select id="refeicao" name="refaicao">
+                    <option value="vegetariana">Vegetariana</option>
+                    <option value="lanche">Lanche</option>
+                    <option value="salada">Salada</option>
+                    <option value="snack">Snack</option>
+                    <option value="massa">Massa</option>
+                </select>
+            </div>
+            <div>
+                <label for="tel">Telefone:</label>
+                <input type="tel" id="tel" name="tel" placeholder="(12)12345-6789" />
+            </div>
+            <div>
+                <label for="pais-destino">País destino:</label>
 
-        <select id="pais-destino" name="pais-destino">
-            <option value="marrocos"> Marrocos</option>
-            <option value="italia">Itália</option>
-            <option value="japao">Japão</option>
-            <option value="indonesia">Indonésia</option>
-            <option value="russia">Russia</option>
-        </select>
-        <div>
-            <label for="assento">Assento:</label>
+                <select id="pais-destino" name="pais-destino">
+                    <option value="marrocos"> Marrocos</option>
+                    <option value="italia">Itália</option>
+                    <option value="japao">Japão</option>
+                    <option value="indonesia">Indonésia</option>
+                    <option value="russia">Russia</option>
+                </select>
+            </div>
+            <div>
+                <label for="assento">Assento:</label>
 
-            <label>
-                <input type="radio" name="preferencia" value="corredor"> Corredor
-            </label>
-            <label>
-                <input type="radio" name="preferencia" value="janela"> Janela
-            </label>
-            <label>
-                <input type="radio" name="preferencia" value="meio"> Assento do Meio
-            </label>
-        </div>
-        <div>
-            <label for="nome">Nome completo:</label>
-            <input type="text" id="text" name="nome" />
-            <label for="cartao">Número do cartão:</label>
-            <input type="tel" id="tel" name="tel" placeholder="1111.1111.1111.1111" />
-            <label for="vencimento">Vencimento:</label>
-            <input type="number" id="tel" name="vencimento" placeholder="11/1111" />
-            <label for="ccv">ccv:</label>
-            <input type="password" id="cvc" name="cvc" required>
-        </div>
-        <div>
-            <label for="passaporte">Upload do passaporte:</label>
-            <input type="file" id="file" name="passaporte" />
-        </div>
-        <div>
-            <label for="servico-quarto">Serviço de quarto:</label>
-            <input type="checkbox" id="checkbox" name="servico-quarto" />
-            <label for="translado">Translado:</label>
-            <input type="checkbox" id="checkbox" name="translado" />
-            <label for="passeios">Passeios:</label>
-            <input type="checkbox" id="checkbox" name="checkbox" />
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+                <label>
+                    <input type="radio" name="preferencia" value="corredor"> Corredor
+                </label>
+                <label>
+                    <input type="radio" name="preferencia" value="janela"> Janela
+                </label>
+                <label>
+                    <input type="radio" name="preferencia" value="meio"> Assento do Meio
+                </label>
+            </div>
+            <div>
+                <label for="nome">Nome no cartão:</label>
+                <input type="text" id="text" name="nome" />
+                <label for="cartao">Número do cartão:</label>
+                <input type="tel" id="tel" name="tel" placeholder="1111.1111.1111.1111" />
+            </div>
+            <div>
+                <label for="vencimento">Vencimento:</label>
+                <input type="number" id="tel" name="vencimento" placeholder="11/1111" />
+                <label for="ccv">ccv:</label>
+                <input type="password" id="cvc" name="cvc" required>
+            </div>
+            <div>
+                <label for="passaporte">Upload do passaporte:</label>
+                <input type="file" id="file" name="passaporte" />
+            </div>
+            <div>
+                <label for="nome">Outras comodidades:</label>
+
+                <label for="servico-quarto">Serviço de quarto</label>
+                <input type="checkbox" id="checkbox" name="servico-quarto" />
+                <label for="translado">Translado</label>
+                <input type="checkbox" id="checkbox" name="translado" />
+                <label for="passeios">Passeios</label>
+                <input type="checkbox" id="checkbox" name="checkbox" />
+            </div>
+            <div class="botao">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
+
 </html>

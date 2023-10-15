@@ -2,37 +2,37 @@
     /* Estilos para telas menores que 768px */
   }
 .father {
-    color: green;
+    color: #4646b4;
 }
 
 .mother {
-    color: red;
+    color: #7d46b4;
 }
 
 .son {
-    color: blue;
+    color: #467db4;
 }
 
 .daughter {
-    color: purple;
+    color: #b44698;
 }
 
 .menu {
-    border: 4px solid #427df3;
     border-collapse: collapse;
     border-spacing: 2px;
+    
 
 }
 
 .menu th {
-    border: 4px solid #C0C0C0;
-    background: #59b9ea;
+    border: 2px solid #C0C0C0;
+    background: #b6cee2;
 }
 
 .menu td {
-    border: 4px solid #C0C0C0;
+    border: 2px solid #C0C0C0;
     text-align: center;
-    background-color: #b2d9ec;
+    background-color: #edf3f8;
 }
 
 .products {
