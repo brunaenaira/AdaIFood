@@ -3,31 +3,47 @@
 
 body {
     background-color: #eaeafb;
-    
+    margin: 0;
+    padding: 0;
+}
+.conteudo {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 .titulo {
-    font-family: 'Marvel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Marvel', 'Open Sans', 'Roboto', sans-serif;
     text-align: center;
-}
-.imagem{
-    float: left;
-    margin-right: 10px;
+    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
 
 }
+
+.imagem-container {
+    text-align: center;
+    max-width: 100%;
+}
+
 #formulario {
-    position:static;
-    margin: 0 auto;
-    padding: 5%;
-    width:  500px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 20px;
     background-color: #9595ea;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
 
 }
-#nome, #email{
-    width: 100%;
+
+#formulario:hover {
+    background-color: #f2b926;
+    /* Altere a cor de fundo ao passar o mouse */
+}
+
+#nome,
+#email {
+    width: 60%;
 }
 
 form div+div {
@@ -44,7 +60,7 @@ form input+input {
 
 .rodape {
     font-size: 12px;
-    background-color:  #944dff    ;
+    background-color: #cc99ff;
     text-align: center;
-    margin-top: 10%;
+    font-weight: bold;
 }
