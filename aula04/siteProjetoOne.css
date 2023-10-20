@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.delicias {
+    font-size: xx-large;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Marvel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display';
+    height: 100vh;
+    font-size: 16px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000601;
+}
+
+.redes-sociais a:hover {
+    color: #12cd2b;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header img {
+    width: 180px;
+    margin: 16px;
+}
+
+header nav {
+    line-height: 45px;
+    background-color: #308708;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 80px;
+    color: #ffffff;
+}
+
+nav ul li a {
+    padding: 00, 5px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #FFFFFF;
+    color: #03412b;
+    border-radius: 5px;
+}
+
+nav ul li a:focus {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    height: fit-content;
+}
+
+main .mais-procurados {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+main .mais-procurados article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    display: inline-block;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+main .mais-procurados article figure {
+    margin-bottom: 8px;
+}
+
+main .mais-procurados article figure img {
+
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tag {
+    background-color: #000000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #938f8f;
+    padding-right: 5px;
+}
+
+main aside {
+    padding: 20px;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+#news {
+    height: 360px;
+    width: inherit;
+    background-color: #FFFFFF;
+}
+
+#mapa img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#about {
+    height: fit-content;
+    padding: 40px 0px;
+    background-color: #015499;
+    color: #FFFFFF;
+}
+
+#about article {
+    width: 60%;
+    margin: auto;
+}
+
+
+#about h3 {
+    margin-top: 30px;
+}
+
+#about p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.titulo {
+    margin: 20px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#inscricoes {
+    margin: 40px;
+    height: fit-content;
+    padding: 40px 0;
+    background-color: #FFFFFF;
+}
+
+#inscricoes label {
+    display: block;
+    margin: 20px 0;
+
+}
+
+#inscricoes label input {
+    border: 1px solid #015499;
+    border-radius: 5px;
+
+}
+
+#inscricoes label input:not([type="checkbox"]) {
+    width: 300px;
+    height: 32px;
+    padding-left: 10px;
+}
+
+#inscricoes button {
+    background-color: #015499;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #FFD700;
+    color: #0f0e0e;
+    text-align: center;
+    padding: 10px 0;
+    height: 50px;
+}
+.titulo-receita{
+    text-align: center;
+    margin: 20px;
+}
+.formulario-receita {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: bold;
+    background-color: #27425f;
+    color: #FFFFFF;
+}
+
+#categoria,
+#nome-receita,
+#email,
+a {
+    width: 70%;
+}
+
+#modo-preparo {
+    width: 300px;
+    height: 200px;
+}
+
+.imagem-formulario {
+    text-align: center;
+    
+}
+
+.imagem-formulario img {
+    width: 600px;
+    height: auto;
+    margin-bottom: 0;
+}
