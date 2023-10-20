@@ -20,6 +20,8 @@ body {
     font-family: 'Playfair Display';
     height: 100vh;
     font-size: 16px;
+    margin: 0; /* Remova as margens padrão do corpo */
+            padding: 0;
 }
 
 .redes-sociais a {
@@ -212,7 +214,6 @@ main aside {
 }
 
 footer {
-    margin-top: 10px;
     background-color: #FFD700;
     color: #0f0e0e;
     text-align: center;
