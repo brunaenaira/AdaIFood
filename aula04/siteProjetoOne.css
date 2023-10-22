@@ -15,13 +15,11 @@ html {
 }
 
 body {
-    font-family: 'Marvel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Playfair Display';
+    font-family: 'Marvel', 'Open Sans', 'Playfair Display', sans-serif;
     height: 100vh;
     font-size: 16px;
     margin: 0; /* Remova as margens padrão do corpo */
-            padding: 0;
+    padding: 0;
 }
 
 .redes-sociais a {
@@ -71,7 +69,7 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 00, 5px 20px;
+    padding: 0 5px 20px;
 }
 
 nav ul li a:hover {
@@ -98,10 +96,9 @@ main .mais-procurados {
 main .mais-procurados article {
     background-color: #f9f9f9;
     padding: 20px;
-    margin-bottom: 20px;
     width: 30%;
     display: inline-block;
-    margin: 10px 0;
+    margin: 20px 0;
     border-radius: 20px;
 }
 
@@ -152,7 +149,7 @@ main aside {
 
 #about {
     height: fit-content;
-    padding: 40px 0px;
+    padding: 40px 0;
     background-color: #015499;
     color: #FFFFFF;
 }
@@ -177,7 +174,6 @@ main aside {
     text-align: left;
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 #inscricoes {
@@ -213,6 +209,10 @@ main aside {
     cursor: pointer;
 }
 
+#formulario label {
+    color: rgba(0, 0, 0, 0.63);
+}
+
 footer {
     background-color: #FFD700;
     color: #0f0e0e;
@@ -220,38 +220,80 @@ footer {
     padding: 10px 0;
     height: 50px;
 }
-.titulo-receita{
+
+.titulo-receita {
     text-align: center;
+    color: #F0F0F0;
     margin: 20px;
 }
+
 .formulario-receita {
     width: 600px;
     margin: 0 auto;
     padding: 20px;
+    border: 2px solid black;
     font-weight: bold;
-    background-color: #27425f;
+    background-color: rgba(241, 229, 229, 0.27);
     color: #FFFFFF;
 }
 
 #categoria,
 #nome-receita,
-#email,
+#email, #ingredientes, #autor, #modo-preparo,
 a {
-    width: 70%;
+    width: 100%;
+}
+
+div + div {
+    margin: 16px 0;
+}
+
+#categoria,
+#nome-receita,
+#email, #ingredientes, #autor {
+    height: 24px;
 }
 
 #modo-preparo {
-    width: 300px;
     height: 200px;
 }
 
 .imagem-formulario {
     text-align: center;
-    
+
 }
 
 .imagem-formulario img {
     width: 600px;
     height: auto;
     margin-bottom: 0;
+}
+
+.enviar-form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.botoes {
+    margin-top: 10px;
+}
+
+.cancel, .send {
+    padding: 10px;
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 8px;
+}
+
+.cancel {
+    background-color: #f59f9f;
+}
+
+.send {
+    background-color: #93e8a1;
+}
+
+main {
+    background: url("https://img.freepik.com/fotos-gratis/panela-de-grelha-vazia-com-varios-ingredientes-frescos-vegetarianos-para-cozinhar-vista-aerea-de-alimentos-grelhados-vegan_118925-1263.jpg?size=626&ext=jpg") no-repeat;
+    background-size: 100% 100%;
 }
