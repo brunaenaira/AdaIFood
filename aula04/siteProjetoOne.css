@@ -5,10 +5,8 @@
 }
 
 .delicias {
-    font-size: xx-large;
-
+    font-size: x-large;
 }
-
 
 html {
     scroll-behavior: smooth;
@@ -18,7 +16,7 @@ body {
     font-family: 'Marvel', 'Open Sans', 'Playfair Display', sans-serif;
     height: 100vh;
     font-size: 16px;
-    margin: 0; /* Remova as margens padrão do corpo */
+    margin: 0;
     padding: 0;
 }
 
@@ -107,9 +105,12 @@ main .mais-procurados article figure {
 }
 
 main .mais-procurados article figure img {
-
+    height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
 }
 
 .tag {
@@ -135,7 +136,7 @@ main aside {
     margin-right: 50px;
 }
 
-#news {
+#contato {
     height: 360px;
     width: inherit;
     background-color: #FFFFFF;
@@ -158,7 +159,6 @@ main aside {
     width: 60%;
     margin: auto;
 }
-
 
 #about h3 {
     margin-top: 30px;
@@ -235,6 +235,7 @@ footer {
     font-weight: bold;
     background-color: rgba(241, 229, 229, 0.27);
     color: #FFFFFF;
+
 }
 
 #categoria,
@@ -293,7 +294,7 @@ div + div {
     background-color: #93e8a1;
 }
 
-main {
+.main {
     background: url("https://img.freepik.com/fotos-gratis/panela-de-grelha-vazia-com-varios-ingredientes-frescos-vegetarianos-para-cozinhar-vista-aerea-de-alimentos-grelhados-vegan_118925-1263.jpg?size=626&ext=jpg") no-repeat;
     background-size: 100% 100%;
 }
