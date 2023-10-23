@@ -122,12 +122,6 @@ main .mais-procurados article figure img {
     margin-bottom: 8px;
 }
 
-.oldPrice {
-    text-decoration: line-through;
-    color: #938f8f;
-    padding-right: 5px;
-}
-
 main aside {
     padding: 20px;
     width: 25%;
@@ -182,6 +176,7 @@ main aside {
     height: fit-content;
     padding: 40px 0;
     background-color: #FFFFFF;
+    
 }
 
 #inscricoes label {
@@ -340,3 +335,28 @@ div + div {
 caption{
     font-size: 18px;
 }
+main .regioes {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+main .regioes article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+main .regioes article figure {
+    margin-bottom: 8px;
+}
+
+main .regioes article figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
