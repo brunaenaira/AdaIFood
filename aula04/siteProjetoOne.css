@@ -199,12 +199,12 @@ main aside {
     margin: 20px 20px;
     padding: 0 8px;
     background-color: #FFFFFF;
-
+    
 }
 
 #inscricoes label {
     display: block;
-    margin: 20px 20px;
+    margin: 20px 0px;
 
 }
 
@@ -333,8 +333,8 @@ div+div {
     justify-content: right;
     align-items: center;
     height: fit-content;
-    padding: 8px;
-    vertical-align: top;
+    padding: 10px;
+    vertical-align: top ;
     display: inline-block;
     width: auto;
     border: 1px solid #C0C0C0;
@@ -342,15 +342,15 @@ div+div {
     margin-right: 16px;
     margin-left: 16px;
     border-collapse: collapse;
+    margin-top: 30px;
 }
 
 .desconto-semanal table {
     width: 100%;
 }
-
 .desconto-semanal th {
     border: 1px solid #C0C0C0;
-    padding: 16px;
+    padding: 10px;
     background: #F0F0F0;
 }
 
