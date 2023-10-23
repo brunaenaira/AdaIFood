@@ -55,7 +55,7 @@ header img {
 }
 
 header nav {
-    line-height: 45px;
+    line-height: 48px;
     background-color: #308708;
     text-align: center;
 }
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 nav ul li a {
-    padding: 0 5px 20px;
+    padding: 5px;
 }
 
 nav ul li a:hover {
@@ -140,6 +140,7 @@ main aside {
     height: 360px;
     width: inherit;
     background-color: #FFFFFF;
+    display: inline;
 }
 
 #mapa img {
@@ -150,7 +151,7 @@ main aside {
 
 #about {
     height: fit-content;
-    padding: 40px 0;
+    padding: 32px 0;
     background-color: #015499;
     color: #FFFFFF;
 }
@@ -297,4 +298,44 @@ div + div {
 .main {
     background: url("https://img.freepik.com/fotos-gratis/panela-de-grelha-vazia-com-varios-ingredientes-frescos-vegetarianos-para-cozinhar-vista-aerea-de-alimentos-grelhados-vegan_118925-1263.jpg?size=626&ext=jpg") no-repeat;
     background-size: 100% 100%;
+}
+
+.contato {
+    padding: 20px;
+    width: 25%;
+    height: fit-content;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.desconto-semanal {
+    display: inline-block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    vertical-align: top;
+    width: 70%;
+    border: 1px solid #C0C0C0;
+    border-collapse: collapse;
+}
+
+.desconto-semanal table {
+    width: 100%;
+}
+
+.desconto-semanal th {
+    border: 1px solid #C0C0C0;
+    padding: 16px;
+    background: #F0F0F0;
+}
+
+.desconto-semanal td {
+    border: 1px solid #C0C0C0;
+    padding: 16px;
+    text-align: center;
+    background: #FFFFCC;
+}
+caption{
+    font-size: 18px;
 }
