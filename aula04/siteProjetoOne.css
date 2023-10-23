@@ -172,11 +172,12 @@ main aside {
 }
 
 #inscricoes {
-    margin: 40px;
+    display: inline-block;
     height: fit-content;
-    padding: 40px 0;
+    /*border: 1px solid #0f0e0e;*/
+    padding: 0 8px;
     background-color: #FFFFFF;
-    
+
 }
 
 #inscricoes label {
@@ -201,6 +202,7 @@ main aside {
     background-color: #015499;
     color: #FFFFFF;
     padding: 10px 20px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
 }
@@ -214,6 +216,7 @@ footer {
     color: #0f0e0e;
     text-align: center;
     padding: 10px 0;
+    margin-top: 8px;
     height: 50px;
 }
 
@@ -304,15 +307,25 @@ div + div {
     margin-right: 25px;
 }
 
-.desconto-semanal {
+.news {
+    padding: 20px;
+    width: 50%;
+    height: fit-content;
     display: inline-block;
-    position: absolute;
+    margin-right: 25px;
+}
+
+.desconto-semanal {
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
+    height: auto;
     vertical-align: top;
+    display: inline-block;
     width: 70%;
     border: 1px solid #C0C0C0;
+    border-radius: 8px;
+    margin-right: 16px;
+    margin-left: 16px;
     border-collapse: collapse;
 }
 
@@ -332,9 +345,11 @@ div + div {
     text-align: center;
     background: #FFFFCC;
 }
-caption{
+
+caption {
     font-size: 18px;
 }
+
 main .regioes {
     display: inline-block;
     width: 70%;
@@ -360,3 +375,4 @@ main .regioes article figure img {
     border-radius: 10px 10px 0 0;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+}
