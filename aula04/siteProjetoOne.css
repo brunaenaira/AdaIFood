@@ -6,6 +6,12 @@
 
 .delicias {
     font-size: x-large;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 400px;
 }
 
 html {
@@ -13,8 +19,7 @@ html {
 }
 
 body {
-    font-family: 'Marvel', 'Open Sans', 'Playfair Display', sans-serif;
-    height: 100vh;
+    font-family: 'Playfair Display', 'Marvel', 'Open Sans', 'Playfair Display', sans-serif;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -27,7 +32,15 @@ body {
 }
 
 .redes-sociais a:hover {
-    color: #12cd2b;
+    color: #0e7aed;
+}
+
+.contato {
+
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 ul,
@@ -81,8 +94,7 @@ nav ul li a:focus {
 }
 
 main {
-    padding: 20px;
-    height: fit-content;
+    padding: 10px;
 }
 
 main .mais-procurados {
@@ -107,14 +119,20 @@ main .mais-procurados article figure {
 main .mais-procurados article figure img {
     height: 100%;
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 50%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
+    transition: border-radius 0.5s;
+    border: 4px solid transparent;
+}
 
+main .mais-procurados article figure img:hover {
+    border-radius: 0;
+    border: 4px solid #308708;
 }
 
 .tag {
-    background-color: #000000;
+    background-color: #308708;
     border-radius: 5px;
     color: #FFFFFF;
     padding: 5px 10px;
@@ -143,30 +161,29 @@ main aside {
     object-fit: cover;
 }
 
-#about {
+#sobre {
     height: fit-content;
     padding: 32px 0;
     background-color: #015499;
     color: #FFFFFF;
 }
 
-#about article {
+#sobre article {
     width: 60%;
     margin: auto;
 }
 
-#about h3 {
+#sobre h3 {
     margin-top: 30px;
 }
 
-#about p {
+#sobre p {
     margin-top: 10px;
     text-align: justify;
 }
 
 .titulo {
     margin: 20px;
-    text-align: left;
     font-size: 30px;
     font-weight: 700;
 }
@@ -174,7 +191,7 @@ main aside {
 #inscricoes {
     display: inline-block;
     height: fit-content;
-    /*border: 1px solid #0f0e0e;*/
+    margin: 20px 20px;
     padding: 0 8px;
     background-color: #FFFFFF;
 
@@ -182,7 +199,7 @@ main aside {
 
 #inscricoes label {
     display: block;
-    margin: 20px 0;
+    margin: 20px 20px;
 
 }
 
@@ -205,12 +222,9 @@ main aside {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-}
+    margin: 20px 20px 0px;
 
-#formulario label {
-    color: rgba(0, 0, 0, 0.63);
 }
-
 footer {
     background-color: #FFD700;
     color: #0f0e0e;
@@ -218,6 +232,10 @@ footer {
     padding: 10px 0;
     margin-top: 8px;
     height: 50px;
+}
+
+#formulario label {
+    color: rgba(0, 0, 0, 0.63);
 }
 
 .titulo-receita {
@@ -239,18 +257,23 @@ footer {
 
 #categoria,
 #nome-receita,
-#email, #ingredientes, #autor, #modo-preparo,
+#email,
+#ingredientes,
+#autor,
+#modo-preparo,
 a {
     width: 100%;
 }
 
-div + div {
+div+div {
     margin: 16px 0;
 }
 
 #categoria,
 #nome-receita,
-#email, #ingredientes, #autor {
+#email,
+#ingredientes,
+#autor {
     height: 24px;
 }
 
@@ -279,7 +302,8 @@ div + div {
     margin-top: 10px;
 }
 
-.cancel, .send {
+.cancel,
+.send {
     padding: 10px;
     border: 1px solid rgb(128, 128, 128);
     min-height: 48px;
@@ -299,24 +323,9 @@ div + div {
     background-size: 100% 100%;
 }
 
-.contato {
-    padding: 20px;
-    width: 25%;
-    height: fit-content;
-    display: inline-block;
-    margin-right: 25px;
-}
-
-.news {
-    padding: 20px;
-    width: 50%;
-    height: fit-content;
-    display: inline-block;
-    margin-right: 25px;
-}
 
 .desconto-semanal {
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: fit-content;
     padding: 8px;
@@ -347,33 +356,7 @@ div + div {
     background: #FFFFCC;
 }
 
+
 caption {
     font-size: 18px;
-}
-
-main .regioes {
-    display: inline-block;
-    width: 70%;
-    vertical-align: top;
-}
-
-main .regioes article {
-    background-color: #f9f9f9;
-    padding: 20px;
-    width: 30%;
-    display: inline-block;
-    margin: 20px 0;
-    border-radius: 20px;
-}
-
-main .regioes article figure {
-    margin-bottom: 8px;
-}
-
-main .regioes article figure img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
 }
