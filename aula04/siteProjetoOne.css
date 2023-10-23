@@ -318,7 +318,8 @@ div + div {
 .desconto-semanal {
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: fit-content;
+    padding: 8px;
     vertical-align: top;
     display: inline-block;
     width: 70%;
