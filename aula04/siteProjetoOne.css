@@ -234,7 +234,7 @@ footer {
     padding: 20px;
     border: 2px solid black;
     font-weight: bold;
-    background-color: rgba(241, 229, 229, 0.27);
+    background-color: #FFFFFFBB;
     color: #FFFFFF;
 
 }
@@ -284,6 +284,7 @@ div + div {
 .cancel, .send {
     padding: 10px;
     border: 1px solid rgb(128, 128, 128);
+    min-height: 48px;
     border-radius: 8px;
 }
 
