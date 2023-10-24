@@ -1,0 +1,92 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container-fluid {
+    background-color: #f5f1f2;
+    
+}
+
+footer {
+    margin-top: 150px;
+    padding: 1px;
+    background-color: #d41928;
+    color: #FFF;
+    text-align:center;
+
+}
+nav .dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(213, 185, 185, 0.2);
+}
+main {
+    padding: 10px;
+}
+
+main .favorites {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}
+
+main .favorites article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 30%;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+main .favorites article figure {
+    margin-bottom: 8px;
+}
+
+main .favorites article figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: border-radius 0.5s;
+    border: 4px solid transparent;
+}
+
+main .favorites article figure img:hover {
+    border-radius: 0;
+    border: 4px solid #d41928;
+}
+.tag {
+    background-color: #d41928;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+
+main aside {
+    padding: 20px;
+    width: 25%;
+    height: 100%;
+    margin-right: 50px;
+}
+#contact{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+
+    }
+#contact a:hover {
+    color: #d41928;
+}
+.proposta{
+    padding: 50px;
+}
