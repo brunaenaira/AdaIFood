@@ -8,7 +8,7 @@
 
 .container-fluid {
     background-color: #f5f1f2;
-    
+
 }
 
 footer {
@@ -16,10 +16,11 @@ footer {
     padding: 1px;
     background-color: #d41928;
     color: #FFF;
-    text-align:center;
+    text-align: center;
 
 }
-nav .dropdown-menu{
+
+nav .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -27,22 +28,23 @@ nav .dropdown-menu{
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(213, 185, 185, 0.2);
 }
-main {
-    padding: 10px;
-}
+
+/*main {*/
+/*    padding: 10px;*/
+/*}*/
 
 main .favorites {
     display: inline-block;
-    width: 70%;
+    width: 100%;
     vertical-align: top;
 }
 
 main .favorites article {
     background-color: #f9f9f9;
-    padding: 20px;
+    padding: 10px;
     width: 30%;
     display: inline-block;
-    margin: 20px 0;
+    margin: 20px auto;
     border-radius: 20px;
 }
 
@@ -64,6 +66,7 @@ main .favorites article figure img:hover {
     border-radius: 0;
     border: 4px solid #d41928;
 }
+
 .tag {
     background-color: #d41928;
     border-radius: 5px;
@@ -79,14 +82,28 @@ main aside {
     height: 100%;
     margin-right: 50px;
 }
-#contact{
+
+#contact {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     margin: 0 10px;
 
-    }
+}
+
 #contact a:hover {
     color: #d41928;
 }
-.proposta{
+
+.proposta {
     padding: 50px;
+}
+
+#norte, #nordeste, #sul, #sudeste, #centro-oeste {
+    border: 2px solid #00060155;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+div h4 {
+    text-align: center;
+    padding-top: 20px;
 }
