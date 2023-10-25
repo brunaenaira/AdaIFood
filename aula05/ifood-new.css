@@ -55,8 +55,9 @@ header .navbar {
     border-radius: 5px;
     color: #d41928;
     width: 200px;
-        margin-right: 10px;
+    margin-right: 10px;
 }
+
 .login-form button {
     background-color: #d41928;
     color: white;
@@ -98,14 +99,16 @@ footer {
     text-align: center;
 
 }
+
 footer .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; /* Defina a altura apropriada */
+    height: 100%;
 }
+
 footer p {
-    margin: 0; 
+    margin: 0;
 }
 
 main .favorites {
@@ -180,7 +183,7 @@ main aside {
     align-items: center;
     padding: 10px;
     width: auto;
-    
+
 }
 
 
@@ -225,4 +228,60 @@ div h4 {
     cursor: pointer;
     margin: 20px 20px 0px;
 
+}
+
+.surpreenda-me {
+    color: #d41928;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 100%;
+    margin: 100px auto;
+    padding: 50px;
+}
+
+
+#pedido-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#pedido-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+#pedido-form input[type="file"],
+#pedido-form input[type="number"],
+#pedido-form input[type="text"],
+#pedido-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #d41928;
+    border-radius: 5px;
+    color: #333;
+}
+
+#pedido-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+#pedido-form button {
+    background-color: #d41928;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
 }

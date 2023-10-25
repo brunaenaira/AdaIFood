@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="ifood-new.css">
     <title>Surpreenda-me</title>
-    <h1>Surpreenda-me</h1>
+    <h1  class="surpreenda-me">Surpreenda-me</h1>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="ifood-logo-0.png" alt="Logo do iFood">
+            </div>
+
+            <ul class="menu">
+                <a class="active" href="ifood-new.html">Home</a>
+                <a href="dieta.html">Dietas</a>
+                <a href="#favorites">Regiões</a>
+                <a href="surpreenda-me.html">Surpreenda-me</a>
+                <a href="#contact">Contato</a>
+            </ul>
+            <div class="nav-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Pesquisar" name="search">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <div class="nav-right">
+                <form class="login-form">
+                    <input type="text" placeholder="Login" name="login">
+                    <input type="password" placeholder="Senha" name="senha">
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
     <form id="pedido-form">
-     
+        <div class="form-group">
         <div>
             <label for="valor">Quer pagar quanto?</label>
             <input type="number" id="valor" name="valor" step="0.01" required>
@@ -18,42 +47,45 @@
 
         <div>
             <label for="cartao_numero">Número do Cartão:</label>
-            <input type="text" id="cartao_numero" name="cartao_numero" required>
+            <input type="number" id="cartao_numero" name="cartao_numero" required>
         </div>
 
         <div>
             <label for="cartao_validade">Data de Validade:</label>
-            <input type="text" id="cartao_validade" name="cartao_validade" required>
+            <input type="date" id="data" name="data">
         </div>
 
         <div>
             <label for="cartao_cvv">CVV:</label>
-            <input type="text" id="cartao_cvv" name="cartao_cvv" required>
+            <input type="number" id="cartao_cvv" name="cartao_cvv" required>
         </div>
 
         <div>
             <p>Forma de Pagamento:</p>
-            <input type="radio" id="cartao" name="forma_pagamento" value="cartao">
             <label for="cartao">Cartão de Crédito</label><br>
+            <input type="radio" id="cartao" name="forma_pagamento" value="cartao">
 
-            <input type="radio" id="entrega" name="forma_pagamento" value="entrega">
             <label for="entrega">Pagamento na Entrega</label><br>
+            <input type="radio" id="entrega" name="forma_pagamento" value="entrega">
 
-            <input type="radio" id="saldo" name="forma_pagamento" value="saldo">
             <label for="saldo">Usar Saldo</label>
+            <input type="radio" id="saldo" name="forma_pagamento" value="saldo">
+
         </div>
 
         <div>
             <p>Escolha uma opção:</p>
-            <input type="radio" id="acordo" name="opcao" value="acordo">
             <label for="acordo">De acordo com meus pedidos</label><br>
+            <input type="radio" id="acordo" name="opcao" value="acordo">
 
-            <input type="radio" id="surpreenda" name="opcao" value="surpreenda">
             <label for="surpreenda">Experimentar algo novo</label>
+            <input type="radio" id="surpreenda" name="opcao" value="surpreenda">
+
         </div>
 
         <div>
             <button type="button" id="enviar">Surpreenda-me</button>
+        </div>
         </div>
     </form>
 </body>
