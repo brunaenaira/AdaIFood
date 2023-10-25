@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="ifood-new.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Surpreenda-me</title>
 </head>
+
 <body>
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="ifood-logo-0.png" alt="Logo do iFood">
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="ifood-logo-0.png" alt="Logo do iFood">
+            </div>
+
+            <ul class="menu">
+                <a class="active" href="ifood-new.html">Home</a>
+               <!-- <a href="dieta.html">Dietas</a>-->
+                <a href="ifood-new.html#favorites">Regiões</a>
+                <a href="surpreenda-me.html">Surpreenda-me</a>
+                <a href="ifood-new.html#contact col">Contato</a>
+            </ul>
+            <div class="nav-right">
+                <form class="search-form">
+                    <input type="text" placeholder="Pesquisar" name="search">
+                    <button type="submit">Pesquisar</button>
+                </form>
+            </div>
+            <div class="nav-right">
+                <form class="login-form">
+                    <input type="text" placeholder="Login" name="login">
+                    <input type="password" placeholder="Senha" name="senha">
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <h1 class="surpreenda-me">Surpreenda-me</h1>
+    <form id="pedido-form">
+        <div class="form-group">
+            <div>
+                <label for="valor">Qual valor gostaria de pagar?</label>
+                <input type="number" id="valor" name="valor" step="0.01" required>
+            </div>
+
+            <div>
+                <label for="cartao_numero">Número do Cartão:</label>
+                <input type="number" id="cartao_numero" name="cartao_numero" required>
+            </div>
+
+            <div>
+                <label for="cartao_validade">Data de Validade:</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div>
+                <label for="cartao_cvv">CVV:</label>
+                <input type="number" id="cartao_cvv" name="cartao_cvv" required>
+            </div>
+
+            <div>
+                <p>Forma de Pagamento:</p>
+                <input type="radio" id="cartao" name="forma_pagamento" value="cartao">
+
+                <label for="cartao">Cartão de Crédito</label><br>
+                <input type="radio" id="entrega" name="forma_pagamento" value="entrega">
+
+                <label for="entrega">Pagamento na Entrega</label><br>
+                <input type="radio" id="saldo" name="forma_pagamento" value="saldo">
+
+                <label for="saldo">Usar Saldo</label>
+
+            </div>
+
+            <div>
+                <p>Escolha uma opção:</p>
+                <input type="radio" id="acordo" name="opcao" value="acordo">
+
+                <label for="acordo">De acordo com meus pedidos</label><br>
+                <input type="radio" id="surpreenda" name="opcao" value="surpreenda">
+
+                <label for="surpreenda">Experimentar algo novo</label>
+
+            </div>
+
+            <div>
+                <button type="button" id="enviar">Surpreenda-me</button>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p> &copy; Copyright 2023 - Bruna A. Felix - Ada - iFood</p>
+                    <div class="col text-right">
+                    </div>
+
+                </div>
+                <div id="contact col">
+                    <p>Contato:</p>
+                    <a href="https://www.linkedin.com/in/bruna-ariane-felix/" target="_blank"><i
+                            class="fa fa-linkedin"></i></a>
+                    <a href="https://pt-br.facebook.com/iFood/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/iFood" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/ifoodbrasil/" target="_blank"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
 
-        <ul class="menu">
-            <a class="active" href="ifood-new.html">Home</a>
-            <a href="dieta.html">Dietas</a>
-            <a href="#favorites">Regiões</a>
-            <a href="surpreenda-me.html">Surpreenda-me</a>
-            <a href="#contact">Contato</a>
-        </ul>
-        <div class="nav-right">
-            <form class="search-form">
-                <input type="text" placeholder="Pesquisar" name="search">
-                <button type="submit">Pesquisar</button>
-            </form>
-        </div>
-        <div class="nav-right">
-            <form class="login-form">
-                <input type="text" placeholder="Login" name="login">
-                <input type="password" placeholder="Senha" name="senha">
-                <button type="submit">Entrar</button>
-            </form>
-        </div>
-    </nav>
-</header>
-<h1 class="surpreenda-me">Surpreenda-me</h1>
-<form id="pedido-form">
-    <div class="form-group">
-        <div>
-            <label for="valor">Quer pagar quanto?</label>
-            <input type="number" id="valor" name="valor" step="0.01" required>
-        </div>
-
-        <div>
-            <label for="cartao_numero">Número do Cartão:</label>
-            <input type="number" id="cartao_numero" name="cartao_numero" required>
-        </div>
-
-        <div>
-            <label for="cartao_validade">Data de Validade:</label>
-            <input type="date" id="data" name="data">
-        </div>
-
-        <div>
-            <label for="cartao_cvv">CVV:</label>
-            <input type="number" id="cartao_cvv" name="cartao_cvv" required>
-        </div>
-
-        <div>
-            <p>Forma de Pagamento:</p>
-            <label for="cartao">Cartão de Crédito</label><br>
-            <input type="radio" id="cartao" name="forma_pagamento" value="cartao">
-
-            <label for="entrega">Pagamento na Entrega</label><br>
-            <input type="radio" id="entrega" name="forma_pagamento" value="entrega">
-
-            <label for="saldo">Usar Saldo</label>
-            <input type="radio" id="saldo" name="forma_pagamento" value="saldo">
-
-        </div>
-
-        <div>
-            <p>Escolha uma opção:</p>
-            <label for="acordo">De acordo com meus pedidos</label><br>
-            <input type="radio" id="acordo" name="opcao" value="acordo">
-
-            <label for="surpreenda">Experimentar algo novo</label>
-            <input type="radio" id="surpreenda" name="opcao" value="surpreenda">
-
-        </div>
-
-        <div>
-            <button type="button" id="enviar">Surpreenda-me</button>
-        </div>
-    </div>
-</form>
+    </footer>
 </body>
+
 </html>
