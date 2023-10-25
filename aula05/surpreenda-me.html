@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <h1>teste</h1>
+
+    <title>Surpreenda-me</title>
+    <h1>Surpreenda-me</h1>
 </head>
 <body>
     
+    <form id="pedido-form">
+     
+        <div>
+            <label for="valor">Quer pagar quanto?</label>
+            <input type="number" id="valor" name="valor" step="0.01" required>
+        </div>
+
+        <div>
+            <label for="cartao_numero">Número do Cartão:</label>
+            <input type="text" id="cartao_numero" name="cartao_numero" required>
+        </div>
+
+        <div>
+            <label for="cartao_validade">Data de Validade:</label>
+            <input type="text" id="cartao_validade" name="cartao_validade" required>
+        </div>
+
+        <div>
+            <label for="cartao_cvv">CVV:</label>
+            <input type="text" id="cartao_cvv" name="cartao_cvv" required>
+        </div>
+
+        <div>
+            <p>Forma de Pagamento:</p>
+            <input type="radio" id="cartao" name="forma_pagamento" value="cartao">
+            <label for="cartao">Cartão de Crédito</label><br>
+
+            <input type="radio" id="entrega" name="forma_pagamento" value="entrega">
+            <label for="entrega">Pagamento na Entrega</label><br>
+
+            <input type="radio" id="saldo" name="forma_pagamento" value="saldo">
+            <label for="saldo">Usar Saldo</label>
+        </div>
+
+        <div>
+            <p>Escolha uma opção:</p>
+            <input type="radio" id="acordo" name="opcao" value="acordo">
+            <label for="acordo">De acordo com meus pedidos</label><br>
+
+            <input type="radio" id="surpreenda" name="opcao" value="surpreenda">
+            <label for="surpreenda">Experimentar algo novo</label>
+        </div>
+
+        <div>
+            <button type="button" id="enviar">Surpreenda-me</button>
+        </div>
+    </form>
 </body>
 </html>
