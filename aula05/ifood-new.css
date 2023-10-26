@@ -26,7 +26,7 @@ header .navbar {
 
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 100%;
     color: #333;
     text-align: center;
     padding: 10px 16px;
@@ -203,6 +203,7 @@ div h4 {
     padding: 0 8px;
     background-color: #FFFFFF;
 
+
 }
 
 #inscricoes label {
@@ -239,34 +240,33 @@ div h4 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     width: 100%;
-    margin: 100px auto;
-    padding: 50px;
+    margin: 10% auto;
+
 }
 
-
 #pedido-form {
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 80%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 10% auto;
     text-align: left;
+    background-color: rgb(238, 209, 209);
+
 }
 
 #pedido-form label {
     margin-top: 10px;
     color: #333;
-    display: inline; 
+    display: inline;
     margin-right: 10px;
 }
 
 #pedido-form input[type="file"],
 #pedido-form input[type="number"],
 #pedido-form input[type="text"],
-#pedido-form input[type="password"] 
-{
+#pedido-form input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -293,6 +293,6 @@ div h4 {
 }
 
 form input[type="radio"] {
-    display: inline; 
-    margin-right: 1px; 
+    display: inline;
+    margin-right: 1px;
 }
