@@ -8,21 +8,29 @@
 
 
 .navbar {
+    min-width: 320%;
     background-color: #f4f3f3;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    height: 15vh;
+    align-items: center;
     padding: 10px;
+    list-style: none;
+    width: 100%;
+
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
 }
 
 header .navbar {
     position: fixed;
     top: 0;
     z-index: 100;
-    width: 100%;
     line-height: 30px;
 }
-
 
 .navbar a {
     float: left;
@@ -32,12 +40,17 @@ header .navbar {
     padding: 10px 16px;
     text-decoration: none;
 }
-
 .navbar a:hover {
     background-color: #d41928;
     color: white;
 }
+.navbar ul li{
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 
+}
 .search-form input[type="text"] {
     border: 1px solid #d41928;
     padding: 5px;
