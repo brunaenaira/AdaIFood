@@ -12,7 +12,7 @@ const parceiros = [
 
 ]
 
-const pessoaFisica = parceiros.filter((parceiro) => parceiro.parceiroId.length == 11);
+const pessoaFisica = parceiros.filter((parceiro) => parceiro.parceiroId.length === 11);
 const pessoaJuridica = parceiros.filter((parceiro) => parceiro.parceiroId.length > 11)
 
 const parceirosAgrupados = {
