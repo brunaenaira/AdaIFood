@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraIMC</title>
+</head>
+
+<body>
+    <h1>Calculadora de IMC</h1>
+
+    <div id="resultado"></div>
+
+    <script>
+        let peso = Number(prompt('Informe seu peso:'));
+        let altura = Number(prompt('Informe sua altura:'));
+
+        let imc = peso / (altura * altura);
+        let seuIMC;
+
+        if (imc < 18.5) {
+            seuIMC = 'Abaixo do peso';
+        } else if (imc >= 18.5 && imc < 24.9) {
+            seuIMC = 'Peso normal';
+        } else if (imc >= 25 && imc < 29.9) {
+            seuIMC = 'Sobrepeso';
+        } else {
+            seuIMC = 'Obesidade';
+        }
+
+        let resultadoElement = document.getElementById('resultado');
+        resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${seuIMC}`;
+    </script>
+
+</body>
+
+</html>
