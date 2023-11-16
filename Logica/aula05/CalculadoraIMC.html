@@ -17,14 +17,14 @@
         let peso = Number(prompt('Informe seu peso:'));
         let altura = Number(prompt('Informe sua altura:'));
 
-        let imc = peso / (altura * altura);
+        const imc = peso / (altura * altura);
         let seuIMC;
 
         if (imc < 18.5) {
             seuIMC = 'Abaixo do peso';
-        } else if (imc >= 18.5 && imc < 24.9) {
+        } else if (imc >= 18.5 && imc <= 24.9) {
             seuIMC = 'Peso normal';
-        } else if (imc >= 25 && imc < 29.9) {
+        } else if (imc >= 25 && imc <= 29.9) {
             seuIMC = 'Sobrepeso';
         } else {
             seuIMC = 'Obesidade';
@@ -33,7 +33,5 @@
         let resultadoElement = document.getElementById('resultado');
         resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${seuIMC}`;
     </script>
-
 </body>
-
 </html>
