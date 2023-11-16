@@ -10,12 +10,15 @@
 
 <body>
     <h1>Calculadora de IMC</h1>
-
     <div id="resultado"></div>
 
     <script>
         let peso = Number(prompt('Informe seu peso:'));
-        let altura = Number(prompt('Informe sua altura:'));
+        let alturaFormatada = prompt('Informe sua altura:');
+
+        alturaFormatada = alturaFormatada.replace(',', '.');
+
+        let altura = Number(alturaFormatada);
 
         const imc = peso / (altura * altura);
         let seuIMC;
@@ -34,4 +37,5 @@
         resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${seuIMC}`;
     </script>
 </body>
+
 </html>
