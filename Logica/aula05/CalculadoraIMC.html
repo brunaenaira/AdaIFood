@@ -13,28 +13,41 @@
     <div id="resultado"></div>
 
     <script>
-        let peso = Number(prompt('Informe seu peso:'));
-        let alturaFormatada = prompt('Informe sua altura:');
+        try {
+            let pesoInput = prompt('Informe seu peso:');
+            let alturaInput = prompt('Informe sua altura:');
 
-        alturaFormatada = alturaFormatada.replace(',', '.');
+            let peso = parseFloat(pesoInput.replace(',', '.'));
+            let altura = parseFloat(alturaInput.replace(',', '.'));
 
-        let altura = Number(alturaFormatada);
+            if (isNaN(peso) || peso <= 0) {
+                throw new Error('Peso inválido.');
+            }
+            if ( isNaN(altura) || altura <= 0) {
+                throw new Error('Altura inválida.');
+            }
 
-        const imc = peso / (altura * altura);
-        let seuIMC;
+            const imc = peso / (altura * altura);
+            let seuIMC;
 
-        if (imc < 18.5) {
-            seuIMC = 'Abaixo do peso';
-        } else if (imc >= 18.5 && imc <= 24.9) {
-            seuIMC = 'Peso normal';
-        } else if (imc >= 25 && imc <= 29.9) {
-            seuIMC = 'Sobrepeso';
-        } else {
-            seuIMC = 'Obesidade';
+            if (imc < 18.5) {
+                seuIMC = 'Abaixo do peso';
+            } else if (imc >= 18.5 && imc <= 24.9) {
+                seuIMC = 'Peso normal';
+            } else if (imc >= 25 && imc <= 29.9) {
+                seuIMC = 'Sobrepeso';
+            } else if (imc > 30) {
+                seuIMC = 'Obesidade';
+            } else {
+                seuIMC = "Dados inválidos";
+            }
+
+            let resultadoElement = document.getElementById('resultado');
+            resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${seuIMC}`;
+        } catch (error) {
+            let resultadoElement = document.getElementById('resultado');
+            resultadoElement.innerHTML = `Ocorreu um erro: ${error.message}`;
         }
-
-        let resultadoElement = document.getElementById('resultado');
-        resultadoElement.innerHTML = `Seu IMC é ${imc.toFixed(2)} - ${seuIMC}`;
     </script>
 </body>
 
